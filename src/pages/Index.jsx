@@ -115,17 +115,15 @@ const Index = () => {
           <Stack spacing={6}>
             <Text fontSize="xl">
               <strong>No one special</strong>
-              <br />
-              Indeed that is true. I want this to work for you, as much as I hope it works for me. My ideas might be irrelevant to most. But just like your ideas they are Priceless all the same. And I'm not wealthy but I love giving and helping and I know there are many who feel the same. Let's Learn and Grow and Collaborate Together.
+              <br />• Indeed that is true. I want this to work for you, as much as I hope it works for me. My ideas might be irrelevant to most. But just like your ideas they are Priceless all the same. And I'm not wealthy but I love giving and helping and I know there are many who feel the same. Let's Learn and Grow and Collaborate Together.
             </Text>
             <Text fontSize="lg">
               <strong>Connections and Resources</strong>
-              <br />
-              We are growing our list to provide investors, mentors, and industry experts to bring your ideas to life.
+              <br />• We are growing our list to provide investors, mentors, and industry experts to bring your ideas to life.
             </Text>
             <Text fontSize="md">
               <strong>Education and Guidance</strong>
-              <br />A lot of planning is underway to provide access to resources for business planning, market analysis, and more to increase your project's success in all fields.
+              <br />• A lot of planning is underway to provide access to resources for business planning, market analysis, and more to increase your project's success in all fields.
             </Text>
           </Stack>
         </GridItem>
