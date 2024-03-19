@@ -16,7 +16,7 @@ const Index = () => {
   };
 
   const handleBoredClick = () => {
-    // TODO: Implement logic for bored users to choose a project to fund
+    window.location.href = "/projects";
   };
 
   const handleProfileImageUpload = (event) => {
