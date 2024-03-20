@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Heading, Text, Image, Button, Grid, GridItem, Input, Textarea, Checkbox, CheckboxGroup, Stack, Link, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Button, Grid, GridItem, Input, Textarea, Checkbox, CheckboxGroup, Stack, Link, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, useDisclosure } from "@chakra-ui/react";
 import { FaLightbulb } from "react-icons/fa";
 
 const Index = () => {
@@ -143,11 +143,6 @@ const Index = () => {
               </Box>
             </Stack>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" onClick={onClose}>
-              Forge Bond
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </Box>
