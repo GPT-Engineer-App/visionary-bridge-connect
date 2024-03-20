@@ -8,7 +8,7 @@ const Index = () => {
   const [credentials, setCredentials] = useState("");
   const [projectTitle, setProjectTitle] = useState("");
   const [projectDescription, setProjectDescription] = useState("");
-  const [selectedInterests, setSelectedInterests] = useState([]);
+
   const { isOpen, onOpen, onClose } = useDisclosure(); // For modal
 
   const handleInspiredClick = () => {
@@ -30,10 +30,6 @@ const Index = () => {
   const handleProjectSubmit = () => {
     // TODO: Submit project details
     onOpen(); // Open the modal after submitting project
-  };
-
-  const handleInterestSelection = (selectedItems) => {
-    setSelectedInterests(selectedItems);
   };
 
   const categoryLinks = {
@@ -154,44 +150,6 @@ const Index = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
-
-      {/* Interest Selection Overlay */}
-      {profileImage && credentials && (
-        <Box position="fixed" top={0} left={0} right={0} bottom={0} bgColor="rgba(255, 255, 255, 0.9)" display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={8}>
-          <Heading size="xl" mb={8}>
-            Select Your Interests
-          </Heading>
-          <CheckboxGroup colorScheme="green" defaultValue={selectedInterests} onChange={handleInterestSelection}>
-            <Stack spacing={4}>
-              <Checkbox value="Technology & Innovation">Technology & Innovation</Checkbox>
-              <Checkbox value="Health & Wellness">Health & Wellness</Checkbox>
-              {/* Add more category checkboxes */}
-            </Stack>
-          </CheckboxGroup>
-          <Button mt={8} colorScheme="green" size="lg" rightIcon={<FaLightbulb />}>
-            Proceed to Your Future
-          </Button>
-        </Box>
-      )}
-
-      {/* Thank You Message */}
-      {selectedInterests.length > 0 && (
-        <Box textAlign="center" mt={8}>
-          <Heading size="xl">Thank You!</Heading>
-          <Text fontSize="xl" mt={4}>
-            Here are some resources related to your selected interests:
-          </Text>
-          <Stack spacing={4} mt={8}>
-            {selectedInterests.map((interest) => (
-              <Link key={interest} href={categoryLinks[interest]} isExternal fontWeight="bold" fontSize="lg">
-                {interest}
-              </Link>
-            ))}
-          </Stack>
-          <Text mt={8}>We appreciate your feedback to improve the accuracy of our system connections.</Text>
-          {/* TODO: Add feedback form */}
-        </Box>
-      )}
     </Box>
   );
 };
