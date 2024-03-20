@@ -45,12 +45,78 @@ const Index = () => {
         <Heading as="h1" size="2xl" fontWeight="bold" color="blue.700" textShadow="2px 2px #000" mb={2}>
           Visionary Ideas
         </Heading>
-        <Text fontSize="xl" color="gray.600">
-          Delivering ideas to the resources of those who can make it happen
+        <Text fontSize="xl" color="gray.600" mb={8}>
+          Connecting visionaries with the resources to make ideas happen
         </Text>
       </Box>
 
-      {/* Main content */}
+      {}
+      <Grid templateColumns="repeat(3, 1fr)" gap={8} p={8}>
+        {}
+        <GridItem>
+          <Box textAlign="center" mb={8}>
+            <Heading as="h2" size="xl">
+              Our Mission
+            </Heading>
+          </Box>
+          <Text fontSize="lg">At Visionary Ideas, we believe everyone should have the opportunity to pursue their innovative ideas. Our mission is to provide a platform that connects idea makers with the funding, resources, and expertise needed to bring groundbreaking concepts to life. Together, we can shape a better future.</Text>
+        </GridItem>
+
+        {}
+        <GridItem>
+          {!isInspired ? (
+            <Stack spacing={8} align="center">
+              <Button colorScheme="blue" size="lg" onClick={handleInspiredClick}>
+                Share Your Idea
+              </Button>
+              <Button colorScheme="gray" size="lg" onClick={handleBoredClick}>
+                Explore Ideas
+              </Button>
+            </Stack>
+          ) : (
+            <Box>
+              <Heading size="lg" mb={4}>
+                Submit Your Idea
+              </Heading>
+              <Stack spacing={4}>
+                <Input placeholder="Idea Title" value={projectTitle} onChange={(e) => setProjectTitle(e.target.value)} />
+                <Textarea placeholder="Idea Description" value={projectDescription} onChange={(e) => setProjectDescription(e.target.value)} />
+                <Button leftIcon={<FaLightbulb />} colorScheme="yellow" onClick={handleProjectSubmit}>
+                  Submit Idea
+                </Button>
+              </Stack>
+            </Box>
+          )}
+        </GridItem>
+
+        {}
+        <GridItem>
+          <Box textAlign="center" mb={8}>
+            <Heading as="h2" size="xl">
+              Why Visionary Ideas?
+            </Heading>
+          </Box>
+          <Stack spacing={6}>
+            <Text fontSize="lg">
+              <strong>Empowering Innovators</strong>
+              <br />
+              We believe in the power of ideas to change the world. Visionary Ideas empowers innovators from all backgrounds to pursue ambitious ideas.
+            </Text>
+            <Text fontSize="lg">
+              <strong>Connecting to Resources</strong>
+              <br />
+              Get your idea in front of leading investors, foundations, and organizations who can provide the capital and expertise to make it a reality.
+            </Text>
+            <Text fontSize="lg">
+              <strong>Collaborative Community</strong>
+              <br />
+              Connect with a global community of fellow visionaries to find collaborators, get feedback, and build a support network.
+            </Text>
+          </Stack>
+        </GridItem>
+      </Grid>
+
+      {}
       <Grid templateColumns="repeat(3, 1fr)" gap={8} p={8}>
         {}
         <GridItem>
@@ -79,7 +145,7 @@ const Index = () => {
           </Stack>
         </GridItem>
 
-        {/* Center column */}
+        {}
         <GridItem>
           {!isInspired ? (
             <Stack spacing={8} align="center">
