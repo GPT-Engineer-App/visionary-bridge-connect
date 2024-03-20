@@ -41,7 +41,7 @@ const Index = () => {
   return (
     <Box>
       {/* Header */}
-      <Box bgImage="https://images.unsplash.com/photo-1526873064951-dde8217f21bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" bgPosition="center" bgRepeat="no-repeat" bgSize="cover" textAlign="center" py={20}>
+      <Box bgImage="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwY29sbGFnZSUyMG9mJTIwZm9yZXN0cyUyQyUyMGNpdGllcyUyMGFuZCUyMHZpc2lvbmFyeSUyMHByb2plY3RzfGVufDB8fHx8MTcxMDczMDA2NHww&ixlib=rb-4.0.3&q=80&w=1080" bgPosition="center" bgRepeat="no-repeat" bgSize="cover" textAlign="center" py={20}>
         <Heading as="h1" size="2xl" fontWeight="bold" color="blue.700" textShadow="2px 2px #000" mb={2}>
           Visionary Ideas
         </Heading>
